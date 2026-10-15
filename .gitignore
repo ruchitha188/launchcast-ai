@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production build outputs
+dist/
+build/
+*.egg-info/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+env/
+venv/
+ENV/
+.env
+.env.local
+.env.*.local
+
+# Vite / IDE cache
+.vite/
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Temporary root scratch scripts
+gen_*.py
+test_*.py
+test_target/
+*.txt
+audit_*.py
+cleanup_*.py
+fix_*.py
+build_*.py
+link_*.py
+update_*.py
+.vite_cache/

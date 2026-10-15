@@ -1,0 +1,181 @@
+{
+  "file_info": {
+    "filename": "Sales_Transactions_Dataset_Weekly.csv",
+    "filepath": "C:\\Users\\HP\\launchcast_work\\backend\\data\\raw\\Sales_Transactions_Dataset_Weekly.csv",
+    "size_bytes": 317399,
+    "size_kb": 309.96,
+    "format": "CSV (Comma Separated Values)",
+    "encoding": "UTF-8"
+  },
+  "dimensions": {
+    "total_rows": 811,
+    "total_columns": 107,
+    "total_cells": 86777,
+    "unique_products": 811,
+    "duplicate_products": 0
+  },
+  "column_taxonomy": {
+    "product_id_column": "Product_Code",
+    "weekly_sales_columns_count": 52,
+    "weekly_sales_columns_range": "W0 to W51",
+    "summary_columns": [
+      "MIN",
+      "MAX"
+    ],
+    "normalized_columns_count": 52,
+    "normalized_columns_range": "Normalized 0 to Normalized 51"
+  },
+  "missing_data": {
+    "total_null_cells": 0,
+    "null_percentage": 0.0
+  },
+  "weekly_sales_statistics": {
+    "total_observations": 42172,
+    "total_units_sold": 375287,
+    "min_units_per_week": 0,
+    "max_units_per_week": 73,
+    "mean_units_per_week": 8.9,
+    "median_units_per_week": 4.0,
+    "stdev_units_per_week": 12.0,
+    "percentiles": {
+      "p10": 0,
+      "p25": 0,
+      "p50": 4.0,
+      "p75": 12,
+      "p90": 30
+    },
+    "zero_sales_weeks": 11899,
+    "zero_sales_percentage": 28.22
+  },
+  "product_annual_volume_statistics": {
+    "min_annual_units": 1,
+    "max_annual_units": 2220,
+    "mean_annual_units": 462.75,
+    "median_annual_units": 199.0
+  },
+  "verified_dataset_assumptions": {
+    "contains_launch_dates": false,
+    "contains_product_attributes": false,
+    "recorded_history_weeks": 52,
+    "recorded_history_years": 1.0,
+    "contains_three_years_history": false
+  },
+  "transformation_plan": {
+    "source_shape": "811 products x 107 columns (Wide Format)",
+    "target_shape": "42,172 rows x 5 columns (Tidy Long Format: product_code, week_index, week_label, sales_units, normalized_units)",
+    "sample_unpivoted_rows": [
+      {
+        "product_code": "P1",
+        "week_label": "W0",
+        "week_index": 0,
+        "sales_units": 11,
+        "normalized_units": 0.44
+      },
+      {
+        "product_code": "P1",
+        "week_label": "W1",
+        "week_index": 1,
+        "sales_units": 12,
+        "normalized_units": 0.5
+      },
+      {
+        "product_code": "P1",
+        "week_label": "W2",
+        "week_index": 2,
+        "sales_units": 10,
+        "normalized_units": 0.39
+      },
+      {
+        "product_code": "P1",
+        "week_label": "W3",
+        "week_index": 3,
+        "sales_units": 8,
+        "normalized_units": 0.28
+      },
+      {
+        "product_code": "P2",
+        "week_label": "W0",
+        "week_index": 0,
+        "sales_units": 7,
+        "normalized_units": 0.7
+      },
+      {
+        "product_code": "P2",
+        "week_label": "W1",
+        "week_index": 1,
+        "sales_units": 6,
+        "normalized_units": 0.6
+      },
+      {
+        "product_code": "P2",
+        "week_label": "W2",
+        "week_index": 2,
+        "sales_units": 3,
+        "normalized_units": 0.3
+      },
+      {
+        "product_code": "P2",
+        "week_label": "W3",
+        "week_index": 3,
+        "sales_units": 2,
+        "normalized_units": 0.2
+      },
+      {
+        "product_code": "P3",
+        "week_label": "W0",
+        "week_index": 0,
+        "sales_units": 7,
+        "normalized_units": 0.36
+      },
+      {
+        "product_code": "P3",
+        "week_label": "W1",
+        "week_index": 1,
+        "sales_units": 11,
+        "normalized_units": 0.73
+      },
+      {
+        "product_code": "P3",
+        "week_label": "W2",
+        "week_index": 2,
+        "sales_units": 8,
+        "normalized_units": 0.45
+      },
+      {
+        "product_code": "P3",
+        "week_label": "W3",
+        "week_index": 3,
+        "sales_units": 9,
+        "normalized_units": 0.55
+      },
+      {
+        "product_code": "P4",
+        "week_label": "W0",
+        "week_index": 0,
+        "sales_units": 12,
+        "normalized_units": 0.59
+      },
+      {
+        "product_code": "P4",
+        "week_label": "W1",
+        "week_index": 1,
+        "sales_units": 8,
+        "normalized_units": 0.35
+      },
+      {
+        "product_code": "P4",
+        "week_label": "W2",
+        "week_index": 2,
+        "sales_units": 13,
+        "normalized_units": 0.65
+      },
+      {
+        "product_code": "P4",
+        "week_label": "W3",
+        "week_index": 3,
+        "sales_units": 5,
+        "normalized_units": 0.18
+      }
+    ]
+  }
+}

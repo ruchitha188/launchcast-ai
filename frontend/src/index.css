@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #10151D;
+    color: #E7EDF5;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0C1118;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2A3544;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3A485B;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Root fallback ensures immediate dark enterprise canvas */
+body {
+  background-color: #10151D;
+  color: #E7EDF5;
+}
+
+/* Backwards-compatible utility classes with Option B muted enterprise styling */
+.glass-card {
+  background: #171F2A;
+  border: 1px solid #2A3544;
+  border-radius: 0.5rem;
+}
+
+.glow-cyan {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.glow-violet {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.enterprise-panel {
+  background-color: #171F2A;
+  border: 1px solid #2A3544;
+}
+
+.enterprise-divider {
+  border-color: #2A3544;
+}
