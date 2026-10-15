@@ -12,7 +12,7 @@ import {
   LiveRefreshResponse
 } from '../types';
 
-const API_BASE = 'http://127.0.0.1:8000/api/v1';
+const API_BASE = ((import.meta as any).env?.VITE_API_URL as string) || 'http://127.0.0.1:8000/api/v1';
 
 export const api = {
   async getHealth(): Promise<SystemHealth> {

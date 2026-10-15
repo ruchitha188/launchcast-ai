@@ -47,3 +47,4 @@ build_*.py
 link_*.py
 update_*.py
 .vite_cache/
+.vercel
